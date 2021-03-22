@@ -1,0 +1,41 @@
+Mini Case Study: a computer email system
+
+A. 
+	User- This actor is the person who accesses and utlises the computer email system for its intended use. The user acts as person who
+chooses to use this application in order to use the email system to preform standard operations/use cases such as sending emails, recieving emails, deleting emails,
+and replying to emails. The users access to the computer email system is from entering a unique username and password.
+
+	Server- This actor behaves as the network "middle man" for users and their emails. If user A wants to send an email to user B the email must 
+be passed or uploaded through the server for access. The server has use cases such as receiving and sending emails as well as holding a network
+for all email accounts.
+
+	Viruschecker- This actor behaves as the security within the computer email system in order to prevent harmful malware and virus from 
+breaching the email accounts and the server. This checker would not only identify viruses, but also be responsible for destroying them. Aside from 
+these 2 use cases another use case that the Viruschecker would be responbile for is to notify users of blocked emails.
+
+B. 4 use cases
+	Use case number: 
+			1. Send email- Is the use case in which a user would send an email to another user. The email sent would be screened by 
+	Viruschecker to ensure the email is safe and then uploaded to a server which would send it to another user.
+
+			2. email screening - Is the use case the Viruschecker would use  to detect whether an email contains
+	harmful viruses or malware. This would screen emails that are being recieved.
+
+			3. Reply email- Is the use case in which a user would reply to email recieved from the server.
+
+			4. Filter email- Is the use case in which a user can filter their inbox for a specific email .
+
+
+C. is included in the COE528_Lab_4_.ucase.violet
+
+D.
+-User 1 logs in
+-from login User 1 sends an email to User 2
+-Server recieves email and sends it to User 2
+- Viruschecker screens email and does not deem it harmful
+-User 2 logs in and recieves(get an email) email
+-User 2 send reply email to User 1
+-Server receives email and sends it to User 1
+-Viruschecker screens email and deletes it 
+
+E. attached in COE528_Lab_4_.seq.violet
